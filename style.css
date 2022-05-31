@@ -150,7 +150,7 @@ section .title::after{
     height: auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*se acomodan */
 }
 .card_productos li img{
     width: 250px;
@@ -471,7 +471,7 @@ section .title::after{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
-    overflow: hidden;
+    overflow: hidden; /*no se desborda*/
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
@@ -622,20 +622,53 @@ section .title::after{
 }
 /* footer section styling */
 footer{
-    background: #111;
+
+    background: #222222;
     width: 100%;
     height: 150px;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
+    overflow: hidden;
 }
 footer span a{
     color: crimson;
     text-decoration: none;
+    
+}
+span{
+    font-size: 12px;
 }
 footer span a:hover{
     text-decoration: underline;
 }
+.conten_footer{
+    display: flex;
+    list-style: none;
+
+}
+.contactos{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 90px;
+    font-size: 12px;  
+}
+.redes_sociales{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90px;
+    overflow: hidden;
+    
+}
+.redes_sociales a{
+    margin: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+/* =============fin footer=============== */
 /*Whatsapp*/
 .what{
     background: rgb(46, 181, 37);
