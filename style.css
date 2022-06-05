@@ -650,9 +650,22 @@ footer span a:hover{
 .contactos{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 50%;
     height: 90px;
-    font-size: 12px;  
+    font-size: 12px;
+    flex-wrap: wrap; 
+}
+.contac p{
+    font-size: 10px;
+}
+.contac{
+    margin: 8px;   
+
+}
+.contac p{
+    border-bottom: 1px solid;
+    font-size:10px;
 }
 .redes_sociales{
     display:flex;
@@ -663,12 +676,21 @@ footer span a:hover{
     overflow: hidden;
     
 }
+.redes_sociales i{
+    transition: 0.3s;
+}
 .redes_sociales a{
     margin: 5px;
     font-size: 18px;
     color: #fff;
 }
+.redes_sociales i:hover{
+    color: rgb(238, 158, 10);    
+    transform: scale(1.5);
+    transition: 0.3s;
+}
 /* =============fin footer=============== */
+
 /*Whatsapp*/
 .what{
     background: rgb(46, 181, 37);
