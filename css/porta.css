@@ -84,9 +84,9 @@ body{
     font-size: 21px;
 }
 .imagen img{
-    width: 300px;
-    height: 200px;
-    padding-top: 10px;
+    width: 421px;
+    height: 280px;
+    /* padding-top: 10px; */
 }
 @media (max-width: 460px){
     .text{
