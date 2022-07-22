@@ -475,7 +475,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: crimson;
+    /* background: crimson; */
 }
 .teams .carousel .card .box{
     display: flex;
@@ -493,8 +493,8 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 320px;
     width: 320px;
+    height: 300px;    
     object-fit: cover;
     /* border-radius: 50%;
     border: 5px solid crimson; */
