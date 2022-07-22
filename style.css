@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -31,7 +31,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 50px 0;    
+    padding: 60px 0;    
 }
 .max-width{
     max-width: 1300px;
@@ -80,7 +80,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
+/* ====navbar styling==== */
 .navbar{
     
     position: fixed;
@@ -89,11 +89,14 @@ section .title::after{
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background: rgb(21, 107, 122);
+    background: #19a72a;
+    /* border-bottom: solid #00000071; */
+    box-shadow: inset;
+    /* background: #159724; */
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(38, 79, 94);
+    background: rgb(51, 158, 18);
 }
 .navbar .max-width{
     display: flex;
@@ -104,12 +107,12 @@ section .title::after{
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-    text-shadow: 0px 0.5px 1px #000;
+    /* text-shadow: 0px 0.5px 1px #000; */
 }
 .navbar .logo a span{
 
-    text-shadow: 0px 0.5px 1px #000;
-    color: rgb(200, 220, 20);
+    /* text-shadow: 0px 0.5px 1px #000; */
+    color: rgb(236, 252, 10);
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -121,19 +124,24 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    margin-left: 25px;
+    color: rgb(238, 237, 237);
+    font-size: 13px;
+    font-weight: 100;
+    margin-left: 15px;
     transition: color 0.3s ease;
+    text-transform: uppercase;
+    /* letter-spacing: 0.5px; */
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: rgb(255, 239, 15);
+}
+.navbar .menu li a:focus{
+    color: rgb(255, 239, 15) !important;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
-/* productos */
+/* ======== productos ======= */
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -153,34 +161,34 @@ section .title::after{
     flex-wrap: wrap; /*se acomodan */
 }
 .card_productos li img{
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
     border: solid 1px rgba(173, 174, 177, 0.418);
     transition: 0.3s ease;
 }
 .card_productos li{
-    margin-top: 35px;
-    padding: 0 12px 40px;
+    margin-top: 25px;       
+    padding: 0 12px 15px;
     text-align: center;
 }
 .text-productos h2{
-    margin-top: 30px;
-    font-size: 25px;
+    /* margin-top: 30px; */
+    font-size: 17px;
     text-transform: capitalize;
 }
 .text-productos p{
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 12px;
     color: #888;
 }
 .text p{
     margin-top: 12px;
-    font-size: 15px;
+    font-size: 12px;
     color:rgb(134, 134, 134);
 }
 .text h2{
     margin-top: 12px;
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(19, 19, 19);
     overflow: hidden;
 
@@ -190,7 +198,7 @@ section .title::after{
     transform: scale(1.1);
     transition: 0.3s;
 }
-/* ---------------------------- */
+/* -======================================-- */
 
 /* menu btn styling */
 .menu-btn{
@@ -251,7 +259,7 @@ section .title::after{
   margin-right: 0;
 }
 .home .home-content .text-1{
-    font-size: 25px;
+    font-size: 17px;
 }
 .home .home-content .text-2{
     font-size: 60px;
@@ -623,10 +631,10 @@ section .title::after{
 /* footer section styling */
 footer{
 
-    background: #222222;
+    background: #3c3c3c;
     width: 100%;
     height: 150px;
-    padding: 15px 23px;
+    padding: 8px 18px;
     color: #fff;
     text-align: center;
     overflow: hidden;
@@ -638,6 +646,7 @@ footer span a{
 }
 .span1{
     font-size: 12px;
+    /* border-bottom: solid 1px #fff; */
 }
 footer span a:hover{
     text-decoration: underline;
@@ -664,7 +673,7 @@ footer span a:hover{
 
 }
 .contac p{
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     font-size:10px;
 }
 .redes_sociales{
@@ -861,4 +870,14 @@ footer span a:hover{
         display: block;  
 
     }
+}
+@media (max-width: 436px){
+
+    .card_productos li img{
+        width: 200px;
+        height: 200px;
+        border: solid 1px rgba(173, 174, 177, 0.418);
+        transition: 0.3s ease;
+    }
+    
 }
