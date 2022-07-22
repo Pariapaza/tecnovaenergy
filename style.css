@@ -89,10 +89,8 @@ section .title::after{
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background: #19a72a;
-    /* border-bottom: solid #00000071; */
-    box-shadow: inset;
-    /* background: #159724; */
+    background: #19a72a;    
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);    
 }
 .navbar.sticky{
     padding: 15px 0;
