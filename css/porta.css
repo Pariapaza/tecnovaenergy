@@ -66,7 +66,7 @@ body{
 .btn-proyecto:hover {
     background-color: #ffffff;
     border: 2px solid #00b109;
-    color: rgb(13, 179, 35);
+    color: rgb(68, 68, 68);
 }
 .icon{
     width: 180px;
