@@ -1,4 +1,26 @@
-$(document).ready(function(){
+
+$(document).ready(function() {
+
+    // ============swiper================
+     swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 5,
+        centeredSlides: true,
+        loop:true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    // =================================
     
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -72,21 +94,3 @@ $(document).ready(function(){
         }
     });
 });
-// ======Swiper JS=====
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });

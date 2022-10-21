@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -31,7 +31,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 60px 0;    
+    padding: 60px 0 35px 0;    
 }
 .max-width{
     max-width: 1300px;
@@ -89,12 +89,14 @@ section .title::after{
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background: #19a72a;    
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);    
+    background: #04506e;
+    /* border-bottom: solid #00000071; */
+    box-shadow: inset;
+    /* background: #159724; */
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(51, 158, 18);
+    background: #326292;
 }
 .navbar .max-width{
     display: flex;
@@ -241,7 +243,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url(images/portada1.jpg) no-repeat center;
+    background: url("images/portada1.jpg") no-repeat center;
     height: 72vh;
     color: #fff;
     min-height: 500px;
@@ -274,14 +276,17 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    width: 150px;
+    height: 50px;
+    background: rgb(104, 107, 112);
     color: #fff;
     font-size: 25px;
-    padding: 12px 36px;
+    text-align: center;
+    padding: 8px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid rgb(247, 251, 255);
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
@@ -626,16 +631,30 @@ section .title::after{
   color: crimson;
   background: none;
 }
-/* footer section styling */
-footer{
-
-    background: #3c3c3c;
+/* ==========MAIN================ */
+main{
     width: 100%;
-    height: 150px;
-    padding: 8px 18px;
+    height: 500px;
+}
+/* =============footer section styling=================== */
+.footer-main{
+    width: 100%;
+    height: 285px;
+    /* background-color: #b3b3b3; */
+}
+.footer-content{
+
+    background: #353535;
+    width: 100%;
+    height: 370px;
+    padding: 20px 0 0 0;
     color: #fff;
     text-align: center;
     overflow: hidden;
+}
+img{
+    width: 80px;
+    height: 80px;
 }
 footer span a{
     color: crimson;
@@ -655,11 +674,11 @@ footer span a:hover{
 
 }
 .contactos{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     width: 50%;
-    height: 90px;
+    /* height: 90px; */
     font-size: 12px;
     flex-wrap: wrap; 
 }
@@ -687,7 +706,7 @@ footer span a:hover{
     transition: 0.3s;
 }
 .redes_sociales a{
-    margin: 5px;
+    margin: 0 12px;
     font-size: 18px;
     color: #fff;
 }
@@ -695,6 +714,12 @@ footer span a:hover{
     color: rgb(238, 158, 10);    
     transform: scale(1.5);
     transition: 0.3s;
+}
+.datos-footer{
+    width: 100%;
+    height: 50px;
+    background-color: #1d1d1d;
+    font-size: 12px;
 }
 /* =============fin footer=============== */
 
@@ -774,6 +799,7 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 16px;
     }
+    /* ========================== */
     .home .home-content .text-2{
         font-size: 70px;
     }
